@@ -1,0 +1,67 @@
+<!-- 
+   PROGRESSIVELY ENHANCED
+   If a user has `prefers-reduced-motion: reduced`, there will be no animation
+   and the items will wrap, instead of being hidden.
+   If they have not opted for reduced motion, the items will be duplicated with JS
+   and the duplicated content will have `aria-hidden="true"` to prevent duplicate content
+   for screen readers.
+   If a user has JS disabled or it fails for whatever reason, they will get the same 
+   experience as a user with `prefers-reduced-motion: reduced`, so no content is hidden,
+   and there is no animation.
+   
+   === OPTIONS ===
+   CONTROL SPEED 
+   If you don't assign anything, it will use a default speed.
+   To change the speed, on the `.scroller`
+   you can use `data-speed="fast"` or `data-speed="slow"
+
+   CONTROL DIRECTION 
+   By default, it will scroll from right to left.
+   To change the direction, on the `.scroller`
+   you can use `data-direction="right"` (`data-direction="left" also works, but it is the default) 
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Vertical Tabs</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+            rel="stylesheet"
+            type='text/css'
+        >
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <h1 style="text-align: center">Infinite Scroll Animation</h1>
+
+        <div class="scroller" data-speed="fast">
+         <ul class="tag-list scroller__inner">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+            <li>webdev</li>
+            <li>animation</li>
+            <li>UI/UX</li>
+            <li>React</li>
+         </ul>
+        </div>
+
+        <div class="scroller" data-direction="right" data-speed="medium">
+        <div class="scroller__inner">
+            <img src="https://media.gettyimages.com/id/532148644/photo/mountain-view-ca-google-ceo-sundar-pichai-speaks-during-google-i-o-2016-at-shoreline.jpg?s=612x612&w=0&k=20&c=DsBObJ-5TA6J1h3TKp59T0ijV44BUw69Amt3UH6Jm9w="  alt="Google" />
+            <img src="https://media.gettyimages.com/id/1395230783/photo/new-york-new-york-bill-gates-discusses-his-new-book-how-to-prevent-the-next-pandemic-onstage.jpg?s=612x612&w=0&k=20&c=2SxKbAGFVMQGZN0FxeI1BJx8v7exWNH5tcRgMvQWNzs=" alt="Microsoft" />
+            <img src="https://media.gettyimages.com/id/1648069/photo/new-york-amazon-com-ceo-jeff-bezos-stands-with-segway-inventor-dean-kamen-while-opening-the.jpg?s=612x612&w=0&k=20&c=4c-SoHPmdLfGVbqGJoiq3DSKPWL_ADFsbxSzppDOTIs=" alt="Amazon" />
+            <img src="https://media.gettyimages.com/id/85199462/photo/geneva-chairman-of-indias-tata-motors-ratan-tata-looks-on-during-the-first-press-day-at-the.jpg?s=612x612&w=0&k=20&c=BoJySuYW4vK8bjj0r4vh_UeGlCAVNylpzsa0A6rO7hg=" alt="Tata" />
+            <img src="https://media.gettyimages.com/id/109771799/photo/mukesh-d-ambani-chairman-of-reliance-industries-ltd-smiles-at-the-institute-of-international.jpg?s=612x612&w=0&k=20&c=K-JhmBq5kQ3cxc7y3sRppqRS0CHVi-nwqUeBBXiEF6U=" alt="Ambani" />
+            <img src="https://media.gettyimages.com/id/1229892421/photo/berlin-germany-december-01-spacex-owner-and-tesla-ceo-elon-musk-arrives-on-the-red-carpet-for.jpg?s=612x612&w=0&k=20&c=xReo2X0OfYM2lPWVVLyS9kuKn7NbMFy61XSsseeRNQ8=" alt="Elon Musk" />
+            
+        </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
