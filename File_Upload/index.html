@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Upload file</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form class="dropzone-box">
+    <h2>Upload file</h2>
+    <p>Click to upload or drag and drop</p>
+    <div class="dropzone-area">
+      <div class="file-upload-icon">
+        <!-- svg file upload -->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 48 48">
+          <path stroke="currentColor" stroke-width="2" d="M24 34V14m0 0l-7 7m7-7l7 7"/>
+          <rect x="6" y="34" width="36" height="8" rx="2" stroke="currentColor" stroke-width="2"/>
+        </svg>
+      </div>
+      <input 
+        type="file" 
+        required 
+        id="upload-file" 
+        name="uploaded-file" 
+        accept="image/*"
+      >
+      <p class="file-info">No Files Selected</p>
+    </div>
+    <div class="dropzone-description">
+      <span>Max file size: 25MB</span>
+    </div>
+    <div class="dropzone-actions">
+      <div class="dropzone-help">
+        <!-- Help Center Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+          <path stroke="currentColor" stroke-width="2" d="M12 16v-1m0-6a2 2 0 0 1 2 2c0 1-1 2-2 2s-2 1-2 2"/>
+        </svg>
+        Help Center : Nikhil
+      </div>
+      <div>
+        <button type="reset">Cancel</button>
+        <button id="submit-button" type="submit">Save</button>
+      </div>
+    </div>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>
