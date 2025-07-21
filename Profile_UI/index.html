@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Profile UI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="profile-main-bg">
+    <section class="profile-card">
+      <!-- Profile header with cover and avatar -->
+      <div class="profile-cover">
+        <img src="D:\UI Code\Profile_UI\assets\Cover.jpg" alt="Cover" class="profile-cover-img">
+        <div class="profile-avatar-wrapper">
+          <img src="D:\UI Code\Profile_UI\assets\dp.jpg" class="profile-avatar" alt="Nikhil Agarwal">
+        </div>
+      </div>
+
+      <!-- Profile main content -->
+      <div class="profile-content">
+        <div class="profile-header-row">
+          <div class="profile-name-verified">
+            <h2>
+              Nikhil Agarwal
+              <span class="profile-verified" title="Verified User">
+                <!-- Verified checkmark SVG -->
+                <svg width="21" height="21" fill="none" viewBox="0 0 32 32" style="vertical-align: middle;">
+                  <circle cx="16" cy="16" r="16" fill="#34c759"/>
+                  <path d="M10 17l4 4 8-8" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+            </h2>
+            <p class="profile-username">@nikhil-agarwal</p>
+          </div>
+          <span class="profile-following">
+            <svg height="12" width="12" fill="#34c759" viewBox="0 0 12 12" style="margin-right:0.25em;"><circle cx="6" cy="6" r="6"/></svg>
+            following
+          </span>
+        </div>
+
+        <!-- Stats -->
+        <ul class="profile-stats">
+          <li>
+            <span class="profile-stats-label">Followers</span>
+            <span class="profile-stats-value">15963</span>
+          </li>
+          <li>
+            <span class="profile-stats-label">Following</span>
+            <span class="profile-stats-value">10</span>
+          </li>
+          <li>
+            <span class="profile-stats-label">Posts</span>
+            <span class="profile-stats-value">274</span>
+          </li>
+          <li>
+            <span class="profile-stats-label">Hourly Rate</span>
+            <span class="profile-stats-value">19$</span>
+          </li>
+        </ul>
+        <hr class="profile-divider"/>
+
+        <!-- About -->
+        <div class="profile-about">
+          <h3>About</h3>
+          <p>
+            I am a full-stack developer with 5 years of experience at Google. I have a passion for modern web technologies and love to share my knowledge with others.
+          </p>
+          <div class="profile-about-icons">
+            <!-- Tech stack SVGs -->
+            <span title="React">
+              <svg height="22" width="22" fill="none" stroke="#61dafb" stroke-width="2" viewBox="0 0 24 24"><ellipse cx="12" cy="12" rx="10" ry="4"/><ellipse cx="12" cy="12" rx="4" ry="10" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="4" ry="10" transform="rotate(120 12 12)"/><circle cx="12" cy="12" r="2.5" fill="#61dafb"/></svg>
+            </span>
+            <span title="JavaScript">
+              <svg width="22" height="22" fill="#f7e018" viewBox="0 0 24 24"><rect width="24" height="24" rx="4"/><text x="6" y="18" font-size="10" fill="#232323" font-family="monospace" font-weight="bold">JS</text></svg>
+            </span>
+            <span title="Node.js">
+              <svg width="22" height="22" fill="none" viewBox="0 0 32 32"><polygon points="16,3 29,9.5 29,22.5 16,29 3,22.5 3,9.5" fill="#8cc84b"/><text x="10" y="22" font-size="10" fill="#232323" font-family="monospace" font-weight="bold">Node</text></svg>
+            </span>
+          </div>
+        </div>
+
+        <!-- Location -->
+        <div class="profile-location-row">
+          <a href="https://www.google.com/maps/place/Kolkata,+India" target="_blank" class="profile-location">
+            <svg width="20" height="20" fill="none" stroke="#01976c" stroke-width="2" viewBox="0 0 24 24">
+              <circle cx="12" cy="10" r="3" fill="#fff"/>
+              <path d="M12 2C7 2 4 6.5 4 10c0 5.25 8 12 8 12s8-6.75 8-12c0-3.5-3-8-8-8z"/>
+            </svg>
+            Kolkata, India
+          </a>
+        </div>
+
+        <!-- Tabs -->
+        <div class="tabs-wrapper">
+          <ul class="tabs">
+            <li>
+              <a id="tab1" href="#experience" class="active">Experience</a>
+            </li>
+            <li>
+              <a id="tab2" href="#skills">Skills</a>
+            </li>
+            <li>
+              <a id="tab3" href="#reviews">Reviews</a>
+            </li>
+            <li id="active-bg"></li>
+          </ul>
+
+          <!-- Experience Tab -->
+          <div id="tab1-content" class="tab-content tab-content--active">
+            <ul class="content-links">
+              <li>
+                <a href="google.com">
+                  <img src="D:\UI Code\Profile_UI\assets\Google.webp" class="logo" alt="Google Logo"/>
+                  Google, LLC. (2020–2025)
+                </a>
+              </li>
+              <li>
+                <a href="microsoft.com">
+                  <img src="D:\UI Code\Profile_UI\assets\microsoft.png" class="logo" alt="Microsoft Logo"/>
+                  Microsoft, Inc. (2018–2020)
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- Skills Tab -->
+          <div id="tab2-content" class="tab-content">
+            <ul class="content-links">
+              <li><a href="#">JavaScript (ES6+)</a></li>
+              <li><a href="#">React.js</a></li>
+              <li><a href="#">Node.js</a></li>
+              <li><a href="#">Express</a></li>
+              <li><a href="#">MongoDB</a></li>
+              <li><a href="#">CSS3, HTML5</a></li>
+            </ul>
+          </div>
+          <!-- Reviews Tab -->
+          <div id="tab3-content" class="tab-content">
+            <h4>What my clients say 🚀</h4>
+            <div class="review-card">
+              <img src="D:\UI Code\Profile_UI\assets\doe.jpeg" alt="Joe Doe" class="review-avatar"/>
+              <div>
+                <div class="review-author">Joe Doe</div>
+                <div class="review-text">
+                  Nikhil is a great mentor. He helped me to prepare for the interview and provided me with valuable feedback on my projects. I would highly recommend her to anyone who is looking for a mentor.
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn--primary">Book Mentoring</button>
+        </div>
+      </div>
+      <!-- Social Links Row -->
+      <ul class="profile-social-links">
+        <li>
+          <a href="https://github.com/nikhil04-india" target="_blank" title="GitHub">
+            <svg height="22" width="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.5.5.09.66-.22.66-.48 0-.24-.01-.87-.01-1.7-2.78.6-3.37-1.34-3.37-1.34-.45-1.15-1.1-1.46-1.1-1.46-.9-.62.07-.6.07-.6 1 .07 1.52 1.03 1.52 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.28.1-2.66 0 0 .84-.27 2.75 1.02a9.54 9.54 0 0 1 2.5-.34 9.54 9.54 0 0 1 2.5.34c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.41.1 2.66.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85 0 1.33-.01 2.4-.01 2.73 0 .27.16.58.67.48A10.01 10.01 0 0022 12c0-5.52-4.48-10-10-10z"/>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/nikhil04" target="_blank" title="LinkedIn">
+            <svg height="22" width="22" fill="#0A66C2" viewBox="0 0 24 24">
+              <rect x="2" y="2" width="20" height="20" rx="5"/>
+              <path d="M7 9v8M7 9a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm4 8v-4a2 2 0 0 1 4 0v4m-4 0h4" stroke="#fff"/>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/nikhil04" target="_blank" title="Twitter">
+            <svg height="22" width="22" fill="#1DA1F2" viewBox="0 0 24 24">
+              <rect x="2" y="2" width="20" height="20" rx="5"/>
+              <path d="M8 19l8-14M16 19L8 5" stroke="#fff"/>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
