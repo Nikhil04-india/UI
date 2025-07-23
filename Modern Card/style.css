@@ -1,0 +1,203 @@
+:root {
+  --primary: #060606;
+  --gold: #fbbf24;
+  --white: #fff;
+  --background: #f7f9fc;
+  --text: #222;
+  --headline: #fff;
+  --profile-bg: #222;
+  --profile-text: #fff;
+  --profile-desc: #e5e7eb;
+  --btn-bg: #fff;
+  --btn-text: #222;
+  --bookmark-bg: #222;
+  --bookmark-active-bg: #3bb3e8;
+  --bookmark-border: #222;
+  --bookmark-svg: #fff;
+}
+
+body {
+  background: var(--background);
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.profile-cards {
+  display: flex;
+  gap: 2.2rem;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0;
+}
+
+.profile {
+  background: var(--profile-bg);
+  border-radius: 24px;
+  box-shadow: 0 4px 24px rgba(24, 28, 39, 0.08);
+  overflow: hidden;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.2s;
+  border: 4px solid var(--white);
+  position: relative;
+}
+
+.profile:hover {
+  box-shadow: 0 8px 32px rgba(24, 28, 39, 0.16);
+}
+
+.profile_wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+}
+
+.background-img {
+  height: 320px;
+  width: 100%;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px 20px 0 0;
+  display: block;
+}
+
+.profile_content {
+  padding: 20px 18px 14px 18px;
+  background: linear-gradient(0deg, var(--profile-bg) 85%, rgba(34,34,34,0.04) 100%);
+  border-radius: 0 0 20px 20px;
+  color: var(--profile-text);
+  position: relative;
+  z-index: 2;
+}
+
+.profile_content h2 {
+  font-size: 1.35rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  margin: 0 0 6px 0;
+  display: flex;
+  align-items: center;
+  color: var(--headline);
+  gap: 10px;
+}
+
+.verified {
+  width: 22px;
+  height: 22px;
+  vertical-align: middle;
+}
+
+.description {
+  font-size: 0.99rem;
+  color: var(--profile-desc);
+  margin-bottom: 18px;
+  margin-top: 2px;
+  line-height: 1.5;
+}
+
+.highlights {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 6px;
+}
+
+.highlight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 70px;
+}
+
+.highlight_value {
+  font-size: 1.08rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--headline);
+}
+
+.highlight_value svg {
+  width: 1.2em;
+  height: 1.2em;
+  display: inline-block;
+  vertical-align: middle;
+  fill: var(--gold);
+}
+
+.highlight_name {
+  font-size: 0.77rem;
+  color: var(--profile-desc);
+}
+
+.button-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.primary {
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  border: none;
+  border-radius: 10px;
+  padding: 8px 25px;
+  font-size: 1.02rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-shadow: 0 2px 12px rgba(24, 28, 39, 0.07);
+}
+
+.primary:hover {
+  background: #def6ff;
+}
+
+.primary svg {
+  display: inline-block;
+}
+
+.profile_bookmark {
+  background: var(--bookmark-bg);
+  border: none;
+  border-radius: 8px;
+  padding: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background 0.2s;
+  min-width: 42px;
+  min-height: 42px;
+  justify-content: center;
+}
+
+.profile_bookmark.active {
+  background: var(--bookmark-active-bg);
+}
+
+.profile_bookmark svg {
+  display: block;
+  stroke: var(--bookmark-svg);
+}
+
+@media (max-width: 700px) {
+  .profile-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .profile {
+    width: 95vw;
+    max-width: 340px;
+  }
+}
