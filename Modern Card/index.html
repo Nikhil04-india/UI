@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Modern Profile Cards</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <section class="profile-cards">
+    <!-- Card 1 -->
+    <article class="profile">
+      <div class="profile_wrapper">
+        <img src="assets/model-1.jpeg" alt="Profile Picture" class="background-img"/>
+        <div class="profile_content">
+          <h2>
+            Amanda Johnson
+            <img src="assets/verified.svg" alt="Verified Badge" class="verified"/>
+          </h2>
+          <p class="description">
+            Creative UI/UX Designer with 5+ years of experience of designing user interfaces.
+          </p>
+          <div class="highlights">
+            <div class="highlight">
+              <div class="highlight_value">
+                <svg viewBox="0 0 24 24" width="20" height="20"><path d="M12 17.75l-6.16 3.24 1.18-6.88L2 9.76l6.92-1 3.08-6.24 3.08 6.24 6.92 1-5.02 4.34 1.18 6.88z" fill="#fbbf24"/></svg>
+                4.7
+              </div>
+              <div class="highlight_name">Review</div>
+            </div>
+            <div class="highlight">
+              <div class="highlight_value">$125k+</div>
+              <div class="highlight_name">Revenue</div>
+            </div>
+            <div class="highlight">
+              <div class="highlight_value">149$ / hr</div>
+              <div class="highlight_name">Rate</div>
+            </div>
+          </div>
+          <div class="button-actions">
+            <button class="primary" type="button" onclick="getInTouch('Amanda Johnson')">
+              <svg viewBox="0 0 24 24" width="22" height="22"><rect x="3" y="7" width="18" height="10" rx="2" fill="#fff" stroke="#222" stroke-width="2"/><path d="M3 7l9 6 9-6" stroke="#222" stroke-width="2" fill="none"/></svg>
+              Get In Touch
+            </button>
+            <button class="profile_bookmark" type="button" onclick="toggleBookmark(this)">
+              <svg viewBox="0 0 24 24" width="22" height="22"><path d="M6 4a2 2 0 0 0-2 2v14l8-5.5 8 5.5V6a2 2 0 0 0-2-2H6z" fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- Card 2 -->
+    <article class="profile">
+      <div class="profile_wrapper">
+        <img src="assets/model-2.jpeg" alt="Profile Picture" class="background-img"/>
+        <div class="profile_content">
+          <h2>
+            Caleb Meredith
+            <img src="assets/verified.svg" alt="Verified Badge" class="verified"/>
+          </h2>
+          <p class="description">
+            Results-driven Full Stack Developer with 8+ years in React.js and Node.js.
+          </p>
+          <div class="highlights">
+            <div class="highlight">
+              <div class="highlight_value">
+                <svg viewBox="0 0 24 24" width="20" height="20"><path d="M12 17.75l-6.16 3.24 1.18-6.88L2 9.76l6.92-1 3.08-6.24 3.08 6.24 6.92 1-5.02 4.34 1.18 6.88z" fill="#fbbf24"/></svg>
+                4.9
+              </div>
+              <div class="highlight_name">Review</div>
+            </div>
+            <div class="highlight">
+              <div class="highlight_value">$225k+</div>
+              <div class="highlight_name">Revenue</div>
+            </div>
+            <div class="highlight">
+              <div class="highlight_value">215$ / hr</div>
+              <div class="highlight_name">Rate</div>
+            </div>
+          </div>
+          <div class="button-actions">
+            <button class="primary" type="button" onclick="getInTouch('Caleb Meredith')">
+              <svg viewBox="0 0 24 24" width="22" height="22"><rect x="3" y="7" width="18" height="10" rx="2" fill="#fff" stroke="#222" stroke-width="2"/><path d="M3 7l9 6 9-6" stroke="#222" stroke-width="2" fill="none"/></svg>
+              Get In Touch
+            </button>
+            <button class="profile_bookmark" type="button" onclick="toggleBookmark(this)">
+              <svg viewBox="0 0 24 24" width="22" height="22"><path d="M6 4a2 2 0 0 0-2 2v14l8-5.5 8 5.5V6a2 2 0 0 0-2-2H6z" fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
