@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="container">
+        <form class="login-form" autocomplete="off">
+            <div class="login-logo">
+                <!-- You can use an svg here for the cube icon -->
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                  <rect x="9" y="9" width="30" height="30" rx="8" stroke="#8456EC" stroke-width="4"/>
+                  <rect x="18" y="18" width="12" height="12" rx="3" stroke="#8456EC" stroke-width="2"/>
+                </svg>
+            </div>
+            <h1>Welcome back <span class="wave">👋</span></h1>
+            <p class="subtitle">Please enter your details!</p>
+            <div class="input-group">
+                <label for="email">Email:</label>
+                <div class="input-with-icon">
+                    <input type="email" id="email" name="email" placeholder="nikhil@example.com" required>
+                    <span class="input-icon">@</span>
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="password" class="pw-label">Password</label>
+                <div class="input-with-icon">
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                    <span class="input-icon">
+                        <!-- Lock SVG icon -->
+                        <svg width="20" height="20" fill="none" stroke="#8456EC" stroke-width="2" viewBox="0 0 24 24">
+                          <rect x="5" y="11" width="14" height="8" rx="2"/>
+                          <path d="M8 11V7a4 4 0 1 1 8 0v4"/>
+                        </svg>
+                    </span>
+                </div>
+            </div>
+            <button type="submit" class="login-btn">Login</button>
+            <button type="button" class="google-btn">
+                <img src="assets\google.png" alt="Google" class="google-icon"/>
+                Log in with Google
+            </button>
+            <div class="signup-row">
+                <span>Don't have an account? <a href="#" class="signup-link">Sign Up</a></span>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
