@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GitHub-like Navigation Bar</title>
+  <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="#" class="navbar-logo">
+        <!-- GitHub logo SVG -->
+        <svg height="40" viewBox="0 0 16 16" width="40" aria-hidden="true" style="margin-right:16px;">
+          <circle cx="8" cy="8" r="8" fill="#fff"/>
+          <path fill="#24292f" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.6-.18-3.29-.8-3.29-3.56 0-.79.28-1.44.74-1.95-.07-.19-.32-.96.07-2 0 0 .6-.19 1.97.75.57-.16 1.18-.24 1.79-.24.61 0 1.22.08 1.79.24 1.37-.94 1.97-.75 1.97-.75.39 1.04.15 1.81.07 2 .46.51.74 1.16.74 1.95 0 2.77-1.69 3.38-3.3 3.56.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+        </svg>
+      </a>
+      <ul class="navbar-menu">
+        <li class="navbar-item dropdown">
+          <a href="#" class="navbar-link">Product <span class="arrow">&#9662;</span></a>
+          <div class="dropdown-menu product-menu">
+            <ul>
+              <li>
+                <span class="dropdown-title">
+                  <svg width="24" height="24" fill="none" style="vertical-align:middle;margin-right:8px;"><rect width="24" height="24" fill="#e3e3e3"/><rect x="6" y="6" width="12" height="12" fill="#2188ff"/></svg>
+                  <b>Actions</b>
+                </span>
+                <div class="dropdown-desc">Automate any workflow</div>
+              </li>
+              <li>
+                <span class="dropdown-title">
+                  <svg width="24" height="24" fill="none" style="vertical-align:middle;margin-right:8px;"><rect width="24" height="24" fill="#e3e3e3"/><rect x="7" y="7" width="10" height="10" fill="#6e40c9"/></svg>
+                  <b>Packages</b>
+                </span>
+                <div class="dropdown-desc">Host and manage packages</div>
+              </li>
+              <li>
+                <span class="dropdown-title">
+                  <svg width="24" height="24" fill="none" style="vertical-align:middle;margin-right:8px;"><rect width="24" height="24" fill="#e3e3e3"/><circle cx="12" cy="12" r="7" fill="#2ea44f"/><rect x="11" y="8" width="2" height="6" fill="#fff"/><rect x="11" y="15" width="2" height="2" fill="#fff"/></svg>
+                  <b>Security</b>
+                </span>
+                <div class="dropdown-desc">Find and fix vulnerabilities</div>
+              </li>
+              <li>
+                <span class="dropdown-title">
+                  <svg width="24" height="24" fill="none" style="vertical-align:middle;margin-right:8px;"><rect width="24" height="24" fill="#e3e3e3"/><circle cx="12" cy="10" r="4" fill="#ffd33d"/><rect x="10" y="16" width="4" height="2" fill="#24292f"/></svg>
+                  <b>Copilot</b>
+                </span>
+                <div class="dropdown-desc">Write better code with AI</div>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="navbar-item dropdown">
+          <a href="#" class="navbar-link">Solutions <span class="arrow">&#9662;</span></a>
+          <div class="dropdown-menu solutions-menu">
+            <ul>
+              <li><b>For</b></li>
+              <li class="dropdown-desc">Enterprise</li>
+              <li class="dropdown-desc">Teams</li>
+              <li class="dropdown-desc">Startups</li>
+              <li class="dropdown-desc">Education</li>
+            </ul>
+          </div>
+        </li>
+        <li class="navbar-item dropdown">
+          <a href="#" class="navbar-link">Open Source <span class="arrow">&#9662;</span></a>
+          <div class="dropdown-menu opensource-menu">
+            <ul>
+              <li><b>Repositories</b></li>
+              <li class="dropdown-desc">Topics</li>
+              <li class="dropdown-desc">Trending</li>
+              <li class="dropdown-desc">Collections</li>
+            </ul>
+          </div>
+        </li>
+        <li class="navbar-item">
+          <a href="#" class="navbar-link">Pricing</a>
+        </li>
+      </ul>
+      <div class="navbar-actions">
+        <a href="#" class="navbar-link sign-in">Sign in</a>
+        <a href="#" class="navbar-signup-btn">Sign up</a>
+      </div>
+    </div>
+  </nav>
+</body>
+</html>
