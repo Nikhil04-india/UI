@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Snackbars - Success, Error, Info, Warning</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Fonts: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- Success Snackbar -->
+    <div class="notification notification--success">
+      <div class="notification__body">
+        <span class="notification__icon">✔️</span>
+        Your account has been created! 🚀
+      </div>
+      <div class="notification__progress"></div>
+    </div>
+
+    <!-- Error Snackbar -->
+    <div class="notification notification--failure">
+      <div class="notification__body">
+        <span class="notification__icon">❌</span>
+        Account creation failed! 😟
+      </div>
+      <div class="notification__progress"></div>
+    </div>
+
+    <!-- Warning Snackbar -->
+    <div class="notification notification--warning">
+      <div class="notification__body">
+        <span class="notification__icon">⚠️</span>
+        A new software update is available!
+      </div>
+      <div class="notification__progress"></div>
+    </div>
+
+    <!-- Info Snackbar -->
+    <div class="notification notification--info">
+      <div class="notification__body">
+        <span class="notification__icon">ℹ️</span>
+        A new message has been received!
+      </div>
+      <div class="notification__progress"></div>
+    </div>
+
+    <!-- Finalised Snackbar (optional, extra) -->
+    <div class="notification notification--finalised">
+      <div class="notification__body">
+        <span class="notification__icon">🗂️</span>
+        The data export finalised!
+      </div>
+      <div class="notification__progress"></div>
+    </div>
+
+  </div>
+</body>
+</html>
