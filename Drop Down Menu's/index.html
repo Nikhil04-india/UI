@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Dropdown Menu Example</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="navbar">
+    <button class="ai-agent-btn">+ AI Agent</button>
+    <button class="go-pro-btn">Go Pro</button>
+    <div class="profile-dropdown">
+      <img src="assets/natalia.jpeg" class="profile-avatar" id="profileBtn" alt="Profile">
+      <div class="dropdown-menu" id="dropdownMenu">
+        <div class="dropdown-section">
+          <a href="#" class="dropdown-item"><span class="icon">👤</span> My Profile</a>
+          <a href="#" class="dropdown-item"><span class="icon">⚙️</span> Account Settings</a>
+          <a href="#" class="dropdown-item"><span class="icon">💻</span> Device Management</a>
+          <a href="#" class="dropdown-item"><span class="icon">↩️</span> Sign Out</a>
+        </div>
+        <hr>
+        <div class="dropdown-section">
+          <span class="switch-label">Switch Account</span>
+          <div class="account active">
+            <img src="assets/natalia.jpeg" class="account-avatar" alt="Avatar1">
+            <div>
+              <div class="account-name">Natalia Taylor <span class="dot"></span></div>
+              <div class="account-email">natalia@example.com</div>
+            </div>
+          </div>
+          <div class="account">
+            <img src="assets/dyer.jpeg" class="account-avatar" alt="Avatar2">
+            <div>
+              <div class="account-name">Melissa Johnson</div>
+              <div class="account-email">mel@example.com</div>
+            </div>
+          </div>
+          <button class="signout-all-btn">Sign out all accounts</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
