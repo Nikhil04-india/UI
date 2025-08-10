@@ -1,0 +1,132 @@
+:root {
+  --bg: #dfdfdf;
+  --primary: #e76f51;
+  --box-bg: #ffffff;
+  --box-shadow: 0px 4px 12px rgba(149,157,165,0.2);
+  --text: #2d2d2d;
+  --text-white: #ffffff;
+  --text-gray: #a6a6a6;
+  --item-hover: #f6f6f6;
+  --border-light: #cfcfcf;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:selection {
+  background: var(--primary);
+  color: var(--text-white);
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg);
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  overflow: hidden;
+}
+
+.search-box {
+  background: var(--box-bg);
+  border-radius: 1rem;
+  margin-top: 10rem;
+  padding: 1rem;
+  max-height: 200rem;
+  width: 100%;
+  max-width: 25rem;
+  box-shadow: var(--box-shadow);
+  transition: max-height 0.5s ease-in-out;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.search-box button {
+  background: transparent;
+  border: 0;
+  outline: 0;
+  margin-right: 0.75rem;
+}
+
+.search-box input {
+  flex: 1;
+  max-height: 2.5rem;
+  width: 100%;
+  border: 0;
+  outline: 0;
+  font-size: 1rem;
+  background: transparent;
+  color: var(--text);
+}
+
+.search-box input::placeholder {
+  background: transparent;
+  color: var(--text);
+}
+
+.search-box svg {
+  stroke: var(--text-gray);
+}
+
+.results {
+  overflow-y: auto;
+  height: fit-content;
+  max-height: 20rem;
+}
+
+.results ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.125rem;
+}
+
+.results ul li {
+  list-style: none;
+  padding: 1rem 0.75rem;
+  border-bottom: 1px solid var(--border-light);
+  transition: background 0.25s;
+}
+
+.results ul li.highlight {
+  background: var(--item-hover);
+}
+
+.results ul li:hover,
+.results ul li:focus {
+  cursor: pointer;
+  color: var(--text-hover);
+  background: var(--item-hover);
+  outline: 1px solid var(--primary);
+}
+
+.results::-webkit-scrollbar {
+  height: 1.5rem;
+  width: 0.45rem;
+  background: var(--box-bg);
+  border-radius: 9.99rem;
+}
+
+.results::-webkit-scrollbar-thumb {
+  border-radius: 9.99rem;
+  background: var(--text-gray);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
