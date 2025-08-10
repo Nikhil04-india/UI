@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filter Search</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="search-box">
+    <div class="row">
+      <button aria-label="My search icon"></button>
+      <label for="search" class="visually-hidden">Search S&P 500 Companies</label>
+      <input
+        type="text"
+        id="search"
+        class="search-bar"
+        placeholder="Search for a S&P 500 company..."
+        autocomplete="off"
+        aria-autocomplete="list"
+        aria-controls="search-results"
+      >
+    </div>
+    <div class="results" id="results-container" style="display: none;">
+      <ul id="search-results" role="listbox"></ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
