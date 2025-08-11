@@ -1,0 +1,121 @@
+:root {
+  --box-bg: #fff;
+  --box-border: #eaeaea;
+  --input-border: #050913;
+  --text: #050913;
+  --primary: #105ef0;
+  --danger: #ff4d61;
+  --warning: #ffc12e;
+  --success: #35d39d;
+}
+
+body {
+  background: #f1f2fa;
+  font-family: Arial, sans-serif;
+}
+
+.box {
+  background: var(--box-bg);
+  padding: 2rem 1.5rem;
+  max-width: 370px;
+  margin: 60px auto;
+  border-radius: 1rem;
+  border: 1px solid var(--box-border);
+  box-shadow: 0px 2px 12px rgba(0,0,0,0.08);
+}
+
+.input_wrapper {
+  position: relative; /* Needed for absolute icon positioning */
+  margin-bottom: 36px;
+}
+
+.input__label {
+  display: block;
+  margin-bottom: 7px;
+  font-size: 1.08em;
+  color: #6667AB;
+}
+
+.input__field {
+  width: 100%;
+  padding: 13px 45px 13px 14px; /* Right padding for icon */
+  border-radius: 14px;
+  border: 2px solid var(--primary);
+  font-size: 1.18em;
+  outline: none;
+  color: var(--text);
+  margin-bottom: 0.5em;
+  box-sizing: border-box;
+}
+
+.input__icon {
+  position: absolute;
+  right: 14px;        /* Distance from right edge */
+  top: 52%;           /* Vertically centers icon */
+  transform: translateY(-50%);
+  font-size: 1.55em;
+  cursor: pointer;
+  color: #888;
+  z-index: 2;
+}
+
+.password-strength {
+  margin-top: 20px;
+}
+
+.progress {
+  width: 100%;
+  background: #f1f1f1;
+  border-radius: 0.25rem;
+  margin-bottom: 20px;
+}
+
+.progress-bar {
+  height: 3px !important;
+  width: 0%;
+  border-radius: 0.25rem;
+  background: var(--danger);
+  transition: width 0.3s, background 0.3s;
+}
+
+.progress-bar-danger {
+  background: var(--danger);
+}
+
+.progress-bar-warning {
+  background: var(--warning);
+}
+
+.progress-bar-success {
+  background: var(--success);
+}
+
+.password-strength-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.password-strength-items li {
+  display: flex;
+  align-items: center;
+  font-size: 1.1em;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.ticker {
+  font-size: 1.3em;
+  margin-right: 7px;
+  display: inline-block;
+  width: 22px;
+  text-align: center;
+}
+
+.valid {
+  color: var(--success);
+}
+
+.invalid {
+  color: var(--danger);
+}
