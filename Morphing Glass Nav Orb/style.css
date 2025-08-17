@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at center, #141414, #0b0b17);
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+}
+
+/* Orb in center */
+.orb {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ff0080, #7928ca);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+  font-size: 28px;
+  box-shadow: 0 0 25px rgba(255, 0, 128, 0.7),
+              0 0 45px rgba(121, 40, 202, 0.6);
+  transition: transform 0.5s ease;
+  z-index: 10;
+}
+
+/* Orbit menu container */
+.orbit-menu {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  pointer-events: none;
+  transform: scale(0);
+  transition: transform 0.6s ease-in-out;
+}
+
+.orbit-menu.show {
+  transform: scale(1);
+  pointer-events: all;
+}
+
+/* Menu links positioned circularly */
+.orbit-menu a {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform-origin: -100px center;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.orbit-menu a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #ff0080;
+}
