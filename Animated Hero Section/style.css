@@ -1,0 +1,126 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  color: white;
+  background: linear-gradient(270deg, #ff00cc, #3333ff, #00ffcc, #ff6600);
+  background-size: 800% 800%;
+  animation: gradientMove 15s ease infinite;
+}
+
+/* Overlay for soft effect */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* Content */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  padding: 20px;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #f0f0f0;
+}
+
+.cta-btn {
+  padding: 15px 35px;
+  border: none;
+  border-radius: 50px;
+  font-size: 18px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  color: white;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cta-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(255, 65, 108, 0.6);
+}
+
+/* Floating Shapes */
+.shapes span {
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  animation: float 20s linear infinite;
+  bottom: -150px;
+}
+
+.shapes span:nth-child(1) {
+  left: 20%;
+  width: 60px;
+  height: 60px;
+  animation-duration: 15s;
+}
+.shapes span:nth-child(2) {
+  left: 40%;
+  animation-duration: 22s;
+}
+.shapes span:nth-child(3) {
+  left: 60%;
+  width: 50px;
+  height: 50px;
+  animation-duration: 18s;
+}
+.shapes span:nth-child(4) {
+  left: 75%;
+  animation-duration: 25s;
+}
+.shapes span:nth-child(5) {
+  left: 90%;
+  width: 70px;
+  height: 70px;
+  animation-duration: 30s;
+}
+
+/* Keyframes */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+  }
+}
