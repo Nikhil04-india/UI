@@ -1,0 +1,90 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0f2027;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Loader Container */
+.loader {
+  position: fixed;
+  inset: 0;
+  background: #0f2027;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Rotating Ring */
+.ring {
+  width: 120px;
+  height: 120px;
+  border: 5px solid rgba(255, 255, 255, 0.1);
+  border-top: 5px solid #ff416c;
+  border-radius: 50%;
+  animation: spin 1.5s linear infinite;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+/* Bouncing Dot */
+.dot {
+  width: 15px;
+  height: 15px;
+  background: #00ffcc;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 150px;
+  animation: bounce 0.6s infinite alternate;
+}
+
+/* Loading Text */
+.loader p {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  color: #fff;
+}
+
+.loader p span {
+  animation: blink 1.5s infinite;
+}
+
+/* Main Content (hidden at start) */
+.content {
+  display: none;
+  text-align: center;
+}
+
+.content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+/* Animations */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-40px); }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
